@@ -305,7 +305,7 @@ class RestaurantSystem:
 
         popup = tk.Toplevel()
         popup.geometry("200x150")
-        tk.Label(popup, text=f'Order #{order['id']} has been sent to the restaurant.').pack()
+        tk.Label(popup, text=f"Order #{order['id']} has been sent to the restaurant.").pack()
         tk.Button(popup, text='OK', command=popup.destroy).pack()
         
     # -------------------------
@@ -325,7 +325,7 @@ class RestaurantSystem:
             return
         
         next_order = self.order_queue.dequeue()
-        tk.Label(root, text=f'Order #{next_order['id']}').grid(row=0, column=0)
+        tk.Label(root, text=f"Order #{next_order['id']}").grid(row=0, column=0)
         tk.Label(root, text='Dish').grid(row=1, column=0)
         tk.Label(root, text='Qty').grid(row=1, column=1)
         tk.Label(root, text='Note').grid(row=1, column=2)
