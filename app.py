@@ -354,7 +354,9 @@ def main():
     system.show_home(root)
     root.mainloop()
 
-main()
+if __name__ == "__main__":
+    main()
+
     
 
 
